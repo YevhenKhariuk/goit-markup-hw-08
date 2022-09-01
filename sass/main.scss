@@ -1,0 +1,21 @@
+@import "./base/common";
+@import "./base/reset";
+@import "./utils/mixins";
+@import "./utils/placeholder";
+@import "./utils/variables";
+
+@import "./layout/header";
+@import "./layout/benefits";
+@import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/prices";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/portfolio";
+
+@import "./components/btn";
+@import "./components/container";
+@import "./components/modal";
+
+@import "./utils/hidden";
+@import "./utils/vars";

@@ -1,0 +1,145 @@
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+  }
+}
+
+.footer__web-f {
+  color: var(--third-color);
+}
+
+.footer {
+  background-color: var(--sixth-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-adress-block {
+  width: 231px;
+  margin-right: 70px;
+}
+
+/*footer soc*/
+
+.soclinks {
+  margin-right: auto;
+}
+
+.soclinks {
+  &__footer-soc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin-bottom: 20px;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--soc-icon-bg-focushover);
+    }
+  }
+  &__icon {
+    fill: var(--second-color);
+    .footer-soc-link:hover &,
+    .footer-soc-link:focus & {
+      fill: var(--soc-icon-color-focushover);
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.adress {
+  font-style: normal;
+  margin-top: 20px;
+  &__link-one {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--third-color);
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--third-color);
+    }
+  }
+  &__item {
+    margin-top: 9px;
+  }
+}
+
+.subscribe {
+  &__footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    transition: border-color 250ms;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+    margin-bottom: 20px;
+  }
+  &__field {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    display: block;
+  }
+  &__icon {
+    fill: var(--second-color);
+  }
+  &__wrap {
+    display: flex;
+    gap: 12px;
+  }
+}
