@@ -19,14 +19,16 @@
 }
 
 .portfolio__nav {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
