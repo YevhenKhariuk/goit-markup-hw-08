@@ -22,14 +22,14 @@
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
+  gap: 15px 8px;
   // justify-content: center;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  gap: 30px 0;
 }
 
 .projects__content {
