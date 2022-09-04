@@ -80,11 +80,12 @@
   @extend %align-list;
   justify-content: space-between;
   width: 200px;
-  height: auto;
+  height: 50px;
   padding-left: 29px;
   padding-right: 28px;
   border: 0;
   border-radius: 4px;
+  margin: 0 auto;
   color: var(--second-color);
   background-color: var(--third-color);
   cursor: pointer;
@@ -93,5 +94,12 @@
   &:focus {
     background-color: var(--hero-button-color);
     color: var(--second-color);
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    display: inline-flex;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
   }
 }
