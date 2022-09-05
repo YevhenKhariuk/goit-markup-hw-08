@@ -1,16 +1,23 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
   &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.67;
+    }
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   &__item {
@@ -19,6 +26,13 @@
     align-items: center;
     width: 170px;
     height: 92px;
+    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 150px) / 6);
+    }
   }
   &__link {
     border: 1px solid var(--soc-icon-color);

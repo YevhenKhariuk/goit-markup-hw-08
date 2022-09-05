@@ -1,5 +1,9 @@
 .prices {
-  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-bottom: 94px;
+  }
   &__tittle {
     font-weight: 700;
     font-size: 36px;

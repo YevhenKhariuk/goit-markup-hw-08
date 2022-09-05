@@ -1,18 +1,36 @@
 .benefits {
   padding: 60px 0;
+  &-container {
+    @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
 }
 
 .merit-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   &__item {
-    max-width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
+    // max-width: 270px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
     }
   }
   &__container-icon {
+    width: 100%;
     display: flex;
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     background-color: #f5f4fa;
@@ -27,6 +45,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--first-color);
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   &__text {
     font-size: 14px;
