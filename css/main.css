@@ -211,8 +211,16 @@ img {
 .contacts__mailtel:hover, .contacts__mailtel:focus {
   color: var(--third-color);
 }
+@media screen and (min-width: 768px) {
+  .contacts__mailtel {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__mailtel {
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;

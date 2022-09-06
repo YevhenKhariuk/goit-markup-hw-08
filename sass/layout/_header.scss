@@ -131,7 +131,13 @@
   &:focus {
     color: var(--third-color);
   }
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.17;
+  }
   @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
