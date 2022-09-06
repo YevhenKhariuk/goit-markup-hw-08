@@ -22,6 +22,7 @@
 .header-menu {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .navigation {
@@ -36,13 +37,23 @@
 }
 
 .contacts {
-  margin-left: auto;
-  display: flex;
-  gap: 50px;
+  @include desktop {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__item-mailtel:first-child {
+    @include tablet {
+      margin-bottom: 10px;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.navigation__link,
-.contacts__mailtel {
+.navigation__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -119,6 +130,11 @@
   &:hover,
   &:focus {
     color: var(--third-color);
+  }
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
   }
 }
 

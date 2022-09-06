@@ -100,6 +100,7 @@ img {
 .header-menu {
   display: flex;
   width: 100%;
+  align-items: center;
 }
 
 .navigation {
@@ -113,14 +114,26 @@ img {
   margin-right: 50px;
 }
 
-.contacts {
-  margin-left: auto;
-  display: flex;
-  gap: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__item-mailtel:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item-mailtel:first-child {
+    margin-bottom: 0;
+  }
 }
 
-.navigation__link,
-.contacts__mailtel {
+.navigation__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -197,6 +210,13 @@ img {
 }
 .contacts__mailtel:hover, .contacts__mailtel:focus {
   color: var(--third-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__mailtel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+  }
 }
 
 .header-mobile {
