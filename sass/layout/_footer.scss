@@ -19,6 +19,7 @@
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -45,6 +46,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     margin-right: auto;
@@ -139,6 +141,7 @@
     }
     @media screen and (min-width: 1200px) {
       width: 358px;
+      margin-bottom: 0;
     }
     color: var(--second-color);
     width: 100%;
@@ -151,6 +154,7 @@
     background-color: #2f303a;
   }
   &__text {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -166,7 +170,6 @@
     display: block;
   }
   &__form {
-    margin-top: 20px;
     @media screen and (min-width: 1200px) {
       display: flex;
     }
