@@ -1,20 +1,67 @@
 .hero {
-  background-color: var(--sixth-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: #2f303a;
+  height: 400px;
+  text-align: center;
+  padding: 118px 0;
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/img-hero.jpg);
+    url(../images/work-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 118px 0;
+  max-width: 100%;
+  @include mobile {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/work-mobile.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/work-mobile-2x.jpg);
+    }
+  }
+  @include tablet {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/work-tablet.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/work-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/work.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/work-2x.jpg);
+    }
+  }
 }
 
 .preview__logo {
