@@ -11,8 +11,9 @@
 .modal {
   border-radius: 4px;
   background-color: #ffffff;
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  max-width: 450px;
+  height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,15 +23,26 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0) rotate(360deg);
   }
+  @media screen and (min-width: 480px) {
+    width: calc(100% - 30px);
+    max-width: 528px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__tittle {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__input {

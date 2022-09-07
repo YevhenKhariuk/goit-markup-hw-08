@@ -146,6 +146,7 @@
   align-items: center;
 }
 
+// mob menu
 .mobile-menu {
   display: flex;
   justify-content: center;
@@ -157,9 +158,11 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  &:hover .mobile-menu__icon-open,
+  &:focus .mobile-menu__icon-open {
+    fill: var(--soc-icon-bg-focushover);
+  }
 }
-
-// mob menu
 
 .header-mob-menu {
   z-index: 2;
@@ -190,9 +193,15 @@
   width: 40px;
   background: rgba(0, 0, 0, 0);
   border: none;
+  &:hover .mobile-menu__icon-open,
+  &:focus .mobile-menu__icon-open {
+    fill: var(--soc-icon-bg-focushover);
+  }
 }
 
 .mobile-menu__icon-open {
+  fill: var(--fourth-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-navigation {
