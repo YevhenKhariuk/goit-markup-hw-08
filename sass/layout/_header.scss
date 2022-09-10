@@ -22,7 +22,6 @@
 .header-menu {
   display: flex;
   width: 100%;
-  // align-items: center;
 }
 
 .navigation {
@@ -191,7 +190,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 767px;
   height: 100%;
   background-color: #ffffff;
   padding: 48px 40px;
@@ -201,6 +199,10 @@
   transform: translateY(0);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    display: none;
+    max-width: 767px;
+  }
 }
 
 .mobile-menu-closed {
@@ -223,12 +225,6 @@
 .mobile-menu__icon-open {
   fill: var(--fourth-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-navigation {
-}
-
-.mob-navigation__list {
 }
 
 .mob-navigation__item {
@@ -293,11 +289,6 @@
     padding: 10px 0;
     display: inline;
   }
-}
-
-.mob-contacts__soc-icon {
-}
-.contacts__soc-icon {
 }
 
 .current {
